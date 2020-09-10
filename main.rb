@@ -117,7 +117,7 @@ class Game
 
   def player_score
     puts "this is round #{round_number}"
-    puts "the score is #{player[:p1]} - #{player[:p2]}" if round_number > 2
+    puts "the score is #{player[:p1]} - #{player[:p2]}"
   end
 
 
