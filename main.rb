@@ -139,7 +139,7 @@ class Game
     new_board.write?(inpt,choice)
 
     if new_board.is_end?(choice)
-      self.player[turn] += 1
+      self.player[turn] += 1 if new_board.draw == false
       puts "game over ! #{turn} has won this round" if new_board.draw == false
       puts "game over ! this round is a draw" if new_board.draw == true
       puts
